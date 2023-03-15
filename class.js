@@ -5,41 +5,39 @@ class Person {
     height;
     setName(name) {
         this.name = name
+        return this.name
     }
     setAge(age) {
         this.age = age
+        return age
     }
     setGender(gender) {
         this.gender = gender
+        return gender
     }
     setHeight(height) {
         this.height = height
+        return height
     }
-    getName() {
-        return this.name
+    getName(name) {
+        return name
     }
-    getAge() {
-        return this.age
+    getAge(age) {
+        return age
     }
-    getGender() {
-        return this.gender
+    getGender(gender) {
+        return gender
     }
-    getHeight() {
-        return this.height
+    getHeight(height) {
+        return height
     }
 }
 const person = new Person()
-person.setName("Alrico Rizki Wibowo")
-console.log(person.getName())
 
-person.setAge("22 Tahun")
-console.log(person.getAge())
-
-person.setGender("Laki-laki")
-console.log(person.getGender())
-
-person.setHeight("168 cm")
-console.log(person.getHeight())
+console.log(person.getName(person.setName("Alrico Rizki Wibowo")))
+console.log(person.getAge(person.setAge("22 Tahun")))
+console.log(person.getGender(person.setGender("Laki-laki")))
+console.log(person.getHeight(person.setHeight("168 cm")))
 
 console.log("===================================================\n")
 
